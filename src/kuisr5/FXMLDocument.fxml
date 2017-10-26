@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="467.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kuisr5.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="116.0" layoutY="29.0" prefHeight="43.0" prefWidth="236.0" text="               PENGECEKAN KESEHATAN" />
+      <Separator layoutX="134.0" layoutY="63.0" prefWidth="200.0" />
+      <Label layoutX="95.0" layoutY="122.0" prefHeight="17.0" prefWidth="63.0" text="Nama" />
+      <JFXTextField fx:id="edit_nama" layoutX="227.0" layoutY="115.0" />
+      <Label layoutX="95.0" layoutY="166.0" prefHeight="31.0" prefWidth="34.0" text="Tinggi" />
+      <JFXTextField fx:id="edit_tinggi" layoutX="227.0" layoutY="166.0" />
+      <Label layoutX="94.0" layoutY="232.0" text="Berat Badan" />
+      <JFXTextField fx:id="edit_berat" layoutX="227.0" layoutY="225.0" />
+      <Label layoutX="88.0" layoutY="286.0" text="Jenis kelamin" />
+      <RadioButton fx:id="tb_laki" layoutX="245.0" layoutY="287.0" mnemonicParsing="false" text="Laki-laki" />
+      <RadioButton fx:id="tb_perempuan" layoutX="245.0" layoutY="322.0" mnemonicParsing="false" text="perempuan" />
+      <Button fx:id="tb_proses" layoutX="123.0" layoutY="364.0" mnemonicParsing="false" onAction="#menghasilkan" style="-fx-background-color: pink;" text="Proses" />
+      <Button fx:id="tb_hapus" layoutX="279.0" layoutY="364.0" mnemonicParsing="false" onAction="#menghapus" style="-fx-background-color: yellow;" text="Reset" />
+      <Label layoutX="85.0" layoutY="470.0" text="Hasil Analisi Kesehatans" />
+      <Label layoutX="85.0" layoutY="428.0" text="Berat Ideal Anda" />
+      <Label layoutX="270.0" layoutY="429.0" text="Kg" />
+      <TextArea fx:id="hasil_analisis" layoutX="42.0" layoutY="494.0" prefHeight="38.0" prefWidth="393.0" />
+      <TextArea fx:id="saran" layoutX="45.0" layoutY="548.0" prefHeight="38.0" prefWidth="387.0" />
+      <TextArea fx:id="berat_ideal" layoutX="190.0" layoutY="425.0" prefHeight="31.0" prefWidth="63.0" />
+    </children>
+</AnchorPane>
